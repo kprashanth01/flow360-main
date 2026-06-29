@@ -34,16 +34,6 @@ Example:
 
 > Escalate Priya N.'s license verification because the start date is within 5 days, license verification is incomplete, and the account has prior SLA breach risk. Confidence: 89%. Evidence: meeting transcript, credentialing checklist, CRM account history.
 
-## Demo Domain
-
-The MVP focuses on a fictional healthcare and IT staffing account:
-
-- Account: Northstar Health Network
-- Users: account managers, recruiters, compliance leads, client partners
-- Business process: urgent healthcare and IT staffing fulfillment
-- Decision points: candidate readiness, premium-rate approval, renewal risk, stakeholder follow-up
-- Success metrics: lower SLA breach risk, faster approvals, better renewal confidence, fewer missed credentialing blockers
-
 ## Core Features
 
 - Premium SaaS landing page with a dark cinematic Flow360 hero
