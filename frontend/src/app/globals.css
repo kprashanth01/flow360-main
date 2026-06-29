@@ -1,0 +1,304 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #f8fafc;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+button,
+a,
+input,
+textarea {
+  letter-spacing: 0;
+}
+
+::selection {
+  background: #a5f3fc;
+  color: #111111;
+}
+
+.apple-landing {
+  background:
+    linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.96) 8%, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.12) 50%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0.96) 92%, #000000 100%),
+    radial-gradient(ellipse at 50% 36rem, rgba(125, 211, 252, 0.28), rgba(14, 116, 144, 0.08) 34%, transparent 58%),
+    radial-gradient(ellipse at 22% 37rem, rgba(245, 158, 11, 0.18), transparent 44%),
+    radial-gradient(ellipse at 78% 35rem, rgba(14, 165, 233, 0.16), transparent 46%),
+    linear-gradient(180deg, #050505 0%, #050607 42%, #061018 75%, #030506 100%);
+}
+
+.apple-landing::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 50% 6%, rgba(255, 255, 255, 0.06), transparent 34%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.72), transparent 18%, transparent 82%, rgba(0, 0, 0, 0.72));
+}
+
+.apple-landing::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.13;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 12% 24%, rgba(255, 255, 255, 0.9) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 31% 62%, rgba(255, 255, 255, 0.72) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 47% 18%, rgba(255, 255, 255, 0.64) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 73% 34%, rgba(255, 255, 255, 0.65) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 88% 70%, rgba(255, 255, 255, 0.74) 0 1px, transparent 1.5px);
+  background-size: 190px 190px, 260px 260px, 310px 310px, 230px 230px, 360px 360px;
+}
+
+.apple-landing > section {
+  position: relative;
+  z-index: 1;
+}
+
+.landing-section {
+  background: transparent;
+}
+
+.hero-device-frame::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+}
+
+.hero-device-frame::after {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: -8.5rem;
+  z-index: -1;
+  height: 14rem;
+  border-radius: 999px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(125, 211, 252, 0.2), rgba(245, 158, 11, 0.08) 34%, transparent 72%);
+  filter: blur(34px);
+  pointer-events: none;
+}
+
+.hero-horizon {
+  position: absolute;
+  z-index: 0;
+  left: 6%;
+  right: 6%;
+  bottom: -7%;
+  height: 36%;
+  border-radius: 50% 50% 0 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.92) 0%, rgba(186, 230, 253, 0.72) 8%, rgba(37, 99, 235, 0.38) 25%, rgba(2, 6, 23, 0.98) 64%),
+    linear-gradient(90deg, rgba(251, 146, 60, 0.65), rgba(255, 237, 213, 0.64), rgba(14, 165, 233, 0.62));
+  box-shadow:
+    0 -18px 78px rgba(125, 211, 252, 0.3),
+    0 -48px 128px rgba(251, 146, 60, 0.22);
+  opacity: 0.82;
+}
+
+.hero-horizon::before {
+  content: "";
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  top: -70%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(125, 211, 252, 0.2), rgba(255, 255, 255, 0.34));
+  filter: blur(28px);
+  opacity: 0.8;
+}
+
+.hero-preview {
+  transform: translateY(30%);
+}
+
+.section-aurora {
+  position: absolute;
+  pointer-events: none;
+  filter: blur(28px);
+  opacity: 0.78;
+}
+
+.section-aurora-top {
+  left: 8%;
+  right: 8%;
+  top: -9rem;
+  height: 18rem;
+  background: radial-gradient(ellipse at 50% 100%, rgba(255, 255, 255, 0.16), rgba(125, 211, 252, 0.2) 28%, rgba(251, 146, 60, 0.14) 46%, transparent 72%);
+}
+
+.section-aurora-mid {
+  left: -5%;
+  right: -5%;
+  top: -6rem;
+  height: 16rem;
+  background:
+    radial-gradient(ellipse at 28% 46%, rgba(245, 158, 11, 0.11), transparent 60%),
+    radial-gradient(ellipse at 72% 42%, rgba(125, 211, 252, 0.16), transparent 62%);
+}
+
+.section-aurora-bottom {
+  left: 20%;
+  right: 20%;
+  top: -4rem;
+  height: 14rem;
+  background: radial-gradient(ellipse at 50% 0%, rgba(125, 211, 252, 0.16), transparent 68%);
+}
+
+.cosmic-panel {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.055);
+  box-shadow: 0 18px 70px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(16px);
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    background-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.cosmic-panel:hover {
+  transform: translateY(-3px);
+  border-color: rgba(125, 211, 252, 0.34);
+  background: rgba(255, 255, 255, 0.075);
+  box-shadow: 0 24px 90px rgba(14, 165, 233, 0.14);
+}
+
+.cosmic-chip {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+}
+
+.cosmic-step {
+  position: relative;
+  overflow: hidden;
+}
+
+.cosmic-step::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.65), rgba(125, 211, 252, 0.75));
+  opacity: 0.62;
+}
+
+@keyframes cosmic-drift {
+  0% {
+    background-position: 0% 0%, 50% 22%, 70% 36%, 24% 36%, 0 0;
+  }
+  100% {
+    background-position: 8% 2%, 48% 18%, 66% 30%, 31% 32%, 0 0;
+  }
+}
+
+@keyframes star-drift {
+  0% {
+    background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-position: 70px 120px, -80px 90px, 120px -70px, -110px -90px, 0 0;
+  }
+}
+
+@keyframes horizon-pulse {
+  0%,
+  100% {
+    opacity: 0.74;
+    filter: saturate(1.08);
+  }
+  50% {
+    opacity: 0.92;
+    filter: saturate(1.28);
+  }
+}
+
+@keyframes preview-float {
+  0%,
+  100% {
+    transform: translateY(30%);
+  }
+  50% {
+    transform: translateY(27%);
+  }
+}
+
+@keyframes aurora-shift {
+  0% {
+    transform: translateX(-1.5%) scale(1);
+  }
+  100% {
+    transform: translateX(1.5%) scale(1.04);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-horizon {
+    bottom: 5%;
+    height: 18%;
+    opacity: 0.36;
+  }
+
+  .hero-preview {
+    transform: translateY(16%);
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .apple-landing,
+  .apple-landing::after,
+  .hero-horizon,
+  .hero-preview,
+  .section-aurora {
+    animation: none;
+  }
+}

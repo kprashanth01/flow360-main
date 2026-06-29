@@ -1,0 +1,61 @@
+import type { AgentRunResult, DashboardState, Recommendation } from "./types";
+
+export const emptyRecommendation: Recommendation = {
+  id: "",
+  account_id: "",
+  run_id: "",
+  title: "No action selected",
+  action: "Add source data, define a business objective, then run the planner.",
+  category: "Setup",
+  priority: "low",
+  owner_role: "Unassigned",
+  due_date: "Not scheduled",
+  confidence: 0,
+  rationale: "No recommendation exists until a planner run is created.",
+  business_metric: "No metric selected",
+  status: "pending",
+  evidence: [],
+};
+
+export const emptyDashboardState: DashboardState = {
+  account: {
+    id: "",
+    name: "No Business Configured",
+    segment: "Add a company workspace to begin",
+    domain: "saas_customer_success",
+    health: "empty",
+    renewal_date: null,
+    description: "Create or select a company workspace to begin.",
+    supports_candidates: false,
+    primary_user: "Customer Success Manager",
+    metrics: [],
+    risk_trend: [],
+    metadata: {},
+  },
+  accounts: [],
+  recommendations: [],
+  memory: [],
+  sources: { crm: [], interactions: [], knowledge: [], risks: [], candidates: [] },
+  candidates: [],
+  metrics: [],
+  riskTrend: [],
+  initialInteraction: "",
+  mode: "live",
+};
+
+export const emptyRun: AgentRunResult = {
+  run_id: "",
+  account_id: "",
+  account_name: "",
+  objective: "",
+  title: "",
+  status: "empty",
+  created_at: null,
+  duplicate_of: null,
+  analysis: {},
+  recommendations: [],
+  agent_trace: [],
+  retrieved_context: [],
+  memory_updates: [],
+  mode: "live",
+};
