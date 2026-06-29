@@ -171,8 +171,6 @@ Install these before running the project:
 - Supabase project
 - Groq API key
 
-For hackathon demo recording, Flow360 can also run with fallback behavior when Supabase, Groq, or Ollama are not configured. Live services enable the full production-style workflow.
-
 ## 1. Clone The Repository
 
 ```powershell
@@ -376,16 +374,3 @@ Then restart `npm run dev`.
 
 - [Architecture](Architecture.md)
 - [Setup guide](docs/setup.md)
-
-## Security Notes
-
-- Real API keys must stay in `.env` files only.
-- `.env`, `.env.local`, and similar files are ignored by git.
-- `.env.example` files are safe templates and are committed.
-- Regenerate any keys that were exposed during development before submitting this repository.
-
-## Additional Notes
-
-- Dependency folders such as `node_modules/`, `.venv/`, `.next/`, caches, and build outputs are excluded through `.gitignore`.
-- The app supports both live service mode and fallback demo behavior for reliable hackathon recording.
-- Run the setup commands from a fresh clone before the final demo to verify the repository is self-contained.
