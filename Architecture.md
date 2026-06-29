@@ -9,40 +9,7 @@ The platform is designed for business operators who need to make decisions from 
 Flow360 is not a chatbot or a basic RAG application. It combines tenant-isolated organizational memory, business onboarding, planner-led reasoning, human review, and strategy learning so future recommendations become more personalized to each company.
 
 ## High-Level Architecture
-
-```mermaid
-flowchart TD
-  User["Business User"] --> UI["Next.js Operator Workspace"]
-  UI --> Auth["Supabase Auth / Demo Session"]
-  Auth --> API["FastAPI Backend"]
-
-  API --> Ingest["Source Ingestion Service"]
-  API --> Planner["Planner Orchestrator"]
-  API --> Review["Human Review API"]
-  API --> MemoryAPI["Memory and Dashboard APIs"]
-
-  Ingest --> Memory["Tenant-Scoped Organizational Memory"]
-  Planner --> Retrieval["Context Retrieval"]
-  Retrieval --> Memory
-  Retrieval --> BusinessProfile["Business Profile"]
-  Retrieval --> StrategyProfile["AI Strategy Profile"]
-  Retrieval --> History["Planner History"]
-
-  Planner --> Analysis["Business Analyst Agent"]
-  Analysis --> LLM["Groq LLM Reasoning"]
-  LLM --> Recommendation["Recommendation Engine"]
-  Recommendation --> Actions["Explainable Next Best Actions"]
-
-  Actions --> Review
-  Review --> Execution["Execution Artifacts"]
-  Review --> MemoryUpdate["Memory Update"]
-  MemoryUpdate --> Memory
-  MemoryUpdate --> StrategyProfile
-
-  Memory --> Store["Supabase Postgres + pgvector"]
-  Ingest --> Embeddings["Ollama Embeddings"]
-  Embeddings --> Store
-```
+![Architecture](HighArch.png)
 
 ## Main Layers
 
