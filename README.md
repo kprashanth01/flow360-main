@@ -389,7 +389,3 @@ Then restart `npm run dev`.
 - Dependency folders such as `node_modules/`, `.venv/`, `.next/`, caches, and build outputs are excluded through `.gitignore`.
 - The app supports both live service mode and fallback demo behavior for reliable hackathon recording.
 - Run the setup commands from a fresh clone before the final demo to verify the repository is self-contained.
-
-## License
-
-Hackathon prototype. Add a production license before using this in a commercial setting.
