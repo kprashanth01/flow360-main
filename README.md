@@ -6,7 +6,7 @@ The goal is not to build another chatbot or basic RAG demo. Flow360 is designed 
 
 ## Team Details
 
-- Team/project name: Flow360
+- Team name: Flow360
 - Submission repository: https://github.com/kprashanth01/flow360-demo
 - Team Member 1 - Prashanth Kusumba, Roll No: 23071A0529
 - Tema Member 2 - Varshith Reddy Muduganti, Roll No: 23071A7241
