@@ -7,9 +7,11 @@ The goal is not to build another chatbot or basic RAG demo. Flow360 is designed 
 ## Team Details
 
 - Team/project name: Flow360
-- Repository owner: kprashanth01
 - Submission repository: https://github.com/kprashanth01/flow360-demo
-- Demo domain: Healthcare staffing operations for Northstar Health Network
+- Team Member 1 - Prashanth Kusumba, Roll No: 23071A0529
+- Tema Member 2 - Varshith Reddy Muduganti, Roll No: 23071A7241
+- Team Member 3 - Arvapalli Venkata Ramsai, Roll No: 23071A0571
+
 
 ## Submission Deliverables
 
